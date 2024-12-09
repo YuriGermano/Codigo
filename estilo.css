@@ -1,0 +1,117 @@
+* {
+    padding: 0;
+    margin:0
+}
+
+body{
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1 {
+    margin: 20px 0;
+}
+
+h1 > span {
+    color: red;
+}
+
+.container{
+    background-color: white;
+    width: 50%;
+    height: 60%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 80px);
+    grid-template-rows: auto;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 20px;
+    grid-gap:10px;
+ }
+ 
+ #imagem {
+    grid-column: 1/2;
+    grid-row:1/2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ #sub_container{
+    grid-column: 2/3;
+    grid-row: 1/3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+ }
+ 
+ #botoes{
+    grid-column: 1/4;
+    grid-row: 3/4;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 30px;
+ }
+ 
+ p{padding-left: 5px;}
+ 
+ .container_field {
+    width: 100%;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 50px;
+ }
+
+ input[id^=in] {
+    display: inline-block;
+    flex-grow: 2;
+    max-width: 700px;
+    margin: 0 50px 0 10px;
+ }
+ 
+ img {
+    max-width: 180px;
+ }
+ 
+ button[id^=btn]{
+    width: 300px;
+    margin: 20px auto;
+    font-size: large;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+ }
+ button[id^=btn]:hover{
+    background-color: red;
+    border: 1px solid red;
+    cursor: pointer;
+ }
+ 
+ #outResultado{
+    width: 90%;
+    grid-column: 1/3;
+    grid-row: 4/5;
+    padding: 30px; 
+    background-color: lightgreen;
+    border: 1px solid lightgreen;
+    border-radius: 10px;
+    display: none;
+    justify-content: center;
+ }
+ 
+ table, tr, td, th {
+   text-align: center;
+ }
+ 
